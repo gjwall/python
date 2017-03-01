@@ -46,5 +46,13 @@ q, r = divmod(12,7)
 print (q)
 print (r) 
 
+def straightLine(gradient, x, constant):
+    ''' returns y coordinate of a straight line gradient * x  constant '''
+    return ( gradient * x ) + constant
 
+print (straightLine(2, 4, -2))
 
+for x in range(10):
+    print(x, straightLine(2, x, -3))
+
+help(straightLine)
